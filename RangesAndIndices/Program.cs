@@ -5,7 +5,7 @@
 
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             var array = Enumerable.Range(0, 20).ToArray();
 

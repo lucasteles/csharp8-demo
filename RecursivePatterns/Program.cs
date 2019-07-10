@@ -4,8 +4,6 @@ namespace RecursivePatterns
     using Dominio;
     using System;
 
-    //using SomePessoa = Program.Some<Dominio.Pessoa>;
-
     class Program
     {
         static void Main(string[] args)
@@ -13,7 +11,6 @@ namespace RecursivePatterns
             Console.WriteLine("Hello World!");
 
         }
-
 
         class Point2D
         {
@@ -89,12 +86,12 @@ namespace RecursivePatterns
 
                 Some<Pessoa> somePessoa when somePessoa.Value.Idade > 18 => somePessoa.Value.Nome,
 
-                //Some<Pessoa> { Value: var p  } when p.Idade == 18 => p.Nome,
+                //Some<Pessoa> { Value: var p } when p.Idade == 18 => p.Nome,
                 //SomePessoa { Value: var p } when p.Idade == 18 => p.Nome,
                 //SomePessoa { Value: { Nome: var nome, Idade: 18 } } => nome,
 
-                //Some<Pessoa> (var pessoa) when pessoa.Idade == 18 => pessoa.Nome,
-                //Some<Pessoa> ({ Idade: 18, Nome: var nome }) => nome,
+                //Some<Pessoa>(var pessoa) when pessoa.Idade == 18 => pessoa.Nome,
+                //Some<Pessoa>({ Idade: 18, Nome: var nome }) => nome,
 
                 _ => "ué",
             };

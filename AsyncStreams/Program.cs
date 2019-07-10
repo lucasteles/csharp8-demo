@@ -2,6 +2,7 @@
 namespace AsyncStreams
 {
     using System.Collections.Generic;
+    using System.IO;
     using System.Threading.Tasks;
     using static System.Console;
 
@@ -11,65 +12,66 @@ namespace AsyncStreams
         static async Task Main()
         {
 
-            await AsyncDisposable();
+            //await AsyncDisposable();
+            //await AsyncUsing();
 
 
-            await AsyncUsing();
-
-
-            await foreach (var item in MyIterator())
+            //await foreach (var item in CountLinesOfFile())
+            foreach (var item in CountLinesOfFile())
             {
                 WriteLine(item);
             }
         }
 
-        
-        static async IAsyncEnumerable<int> MyIterator()
+        //static async IAsyncEnumerable<int> CountLinesOfFile()
+        static IEnumerable<int> CountLinesOfFile()
         {
             try
             {
-                for (int i = 0; i < 100; i++)
+                using var reader = new StreamReader(File.OpenRead("file.txt"));
+                while (!reader.EndOfStream)
                 {
-                    await Task.Delay(1000);
-                    yield return i;
+                    var line = reader.ReadLine();
+                    //var line = await reader.ReadLineAsync();
+                    yield return line.Length;
                 }
+
             }
             finally
             {
-                await Task.Delay(200);
-                WriteLine("finally");
+                WriteLine("ACABOU!");
             }
         }
 
 
-        static async Task AsyncUsing()
-        {
-            await using (var enumerator = MyIterator().GetAsyncEnumerator())
-            {
-                while (await enumerator.MoveNextAsync())
-                {
-                    var item = enumerator.Current;
-                    WriteLine(item);
-                }
-            }
-        }
+        //static async Task AsyncUsing()
+        //{
+        //    await using (var enumerator = CountLinesOfFile().GetAsyncEnumerator())
+        //    {
+        //        while (await enumerator.MoveNextAsync())
+        //        {
+        //            var item = enumerator.Current;
+        //            WriteLine(item);
+        //        }
+        //    }
+        //}
 
-        static async Task AsyncDisposable()
-        {
-            var enumerator = MyIterator().GetAsyncEnumerator();
-            try
-            {
-                while (await enumerator.MoveNextAsync())
-                {
-                    var item = enumerator.Current;
-                    WriteLine(item);
-                }
-            }
-            finally
-            {
-                await enumerator.DisposeAsync(); // omitted, along with the try/finally, if the enumerator doesn't expose DisposeAsync
-            }
-        }
+        //static async Task AsyncDisposable()
+        //{
+        //    var enumerator = CountLinesOfFile().GetAsyncEnumerator();
+        //    try
+        //    {
+        //        while (await enumerator.MoveNextAsync())
+        //        {
+        //            var item = enumerator.Current;
+        //            WriteLine(item);
+        //        }
+        //    }
+        //    finally
+        //    {
+        //        await enumerator.DisposeAsync(); // omitted, along with the try/finally, if the enumerator doesn't expose DisposeAsync
+        //    }
+        //}
 
     }
 }

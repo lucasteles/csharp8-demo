@@ -62,7 +62,7 @@
                 Semana.Sexta => "Sexta",
                 Semana.Sabado => "Sábado",
                 Semana.Domingo => "Domingo",
-                _ => ""
+                _ => "",
             };
 
             return retorno;
