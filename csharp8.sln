@@ -3,33 +3,35 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.156
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PropertyPatterns", "PropertyPatterns\PropertyPatterns.csproj", "{5207056E-BE86-442D-A04B-196F918B722F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07-PropertyPatterns", "PropertyPatterns\07-PropertyPatterns.csproj", "{5207056E-BE86-442D-A04B-196F918B722F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dominio", "Modelo\Dominio.csproj", "{085FCC04-AF56-40C2-AE58-333B81BD41E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-Dominio", "Modelo\01-Dominio.csproj", "{085FCC04-AF56-40C2-AE58-333B81BD41E2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TuplePatterns", "TuplePatterns\TuplePatterns.csproj", "{DC08BE29-9B8F-4159-971A-4FB242C13DF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06-TuplePatterns", "TuplePatterns\06-TuplePatterns.csproj", "{DC08BE29-9B8F-4159-971A-4FB242C13DF0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RangesAndIndices", "RangesAndIndices\RangesAndIndices.csproj", "{A867924D-E30D-4A2F-B7DF-2E71446C4D9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-RangesAndIndices", "RangesAndIndices\03-RangesAndIndices.csproj", "{A867924D-E30D-4A2F-B7DF-2E71446C4D9F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NullableReferenceTypes", "NullableReferenceTypes\NullableReferenceTypes.csproj", "{E9B2E258-0350-4BBE-8747-860FCE22FD7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11-NullableReferenceTypes", "NullableReferenceTypes\11-NullableReferenceTypes.csproj", "{E9B2E258-0350-4BBE-8747-860FCE22FD7C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UsingDeclaration", "UsingDeclaration\UsingDeclaration.csproj", "{1490EEC4-D5AD-4D69-A917-B28C1498CAA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-UsingDeclaration", "UsingDeclaration\02-UsingDeclaration.csproj", "{1490EEC4-D5AD-4D69-A917-B28C1498CAA6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StaticLocalFunction", "StaticLocalFunction\StaticLocalFunction.csproj", "{9A6E7780-DC47-4FD6-AF7F-F204300756D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04-StaticLocalFunction", "StaticLocalFunction\04-StaticLocalFunction.csproj", "{9A6E7780-DC47-4FD6-AF7F-F204300756D6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SwitchExpression", "SwitchExpression\SwitchExpression.csproj", "{33664A0B-D146-4C88-B7EA-C21AC9577878}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05-SwitchExpression", "SwitchExpression\05-SwitchExpression.csproj", "{33664A0B-D146-4C88-B7EA-C21AC9577878}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecursivePatterns", "RecursivePatterns\RecursivePatterns.csproj", "{E2AF7EC0-C089-4F47-99E3-79AD99C78873}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08-RecursivePatterns", "RecursivePatterns\08-RecursivePatterns.csproj", "{E2AF7EC0-C089-4F47-99E3-79AD99C78873}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncStreams", "AsyncStreams\AsyncStreams.csproj", "{24549619-2E86-4B10-8888-C56D2A9F6C49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10-AsyncStreams", "AsyncStreams\10-AsyncStreams.csproj", "{24549619-2E86-4B10-8888-C56D2A9F6C49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefaultInterfaceMethods", "DefaultInterfaceMethods\DefaultInterfaceMethods.csproj", "{09991737-D141-4156-B5EA-784DBB6F30C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09-DefaultInterfaceMethods", "DefaultInterfaceMethods\09-DefaultInterfaceMethods.csproj", "{09991737-D141-4156-B5EA-784DBB6F30C6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharp8", "CSharp8", "{65059167-FF91-4500-8097-5C0560D63553}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharp7", "CSharp7", "{6AA93F08-DC57-4827-8AE3-61FCC1344FCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tuples", "Tuples\Tuples.csproj", "{489E0791-31DD-4329-A022-FD9DDCA70624}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1-Tuples", "Tuples\1-Tuples.csproj", "{489E0791-31DD-4329-A022-FD9DDCA70624}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2-PatternMatching", "PatternMatching\2-PatternMatching.csproj", "{8B199F73-60F1-44A9-9C16-46DC341EFF63}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -85,6 +87,10 @@ Global
 		{489E0791-31DD-4329-A022-FD9DDCA70624}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{489E0791-31DD-4329-A022-FD9DDCA70624}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{489E0791-31DD-4329-A022-FD9DDCA70624}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B199F73-60F1-44A9-9C16-46DC341EFF63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B199F73-60F1-44A9-9C16-46DC341EFF63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B199F73-60F1-44A9-9C16-46DC341EFF63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B199F73-60F1-44A9-9C16-46DC341EFF63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -102,6 +108,7 @@ Global
 		{24549619-2E86-4B10-8888-C56D2A9F6C49} = {65059167-FF91-4500-8097-5C0560D63553}
 		{09991737-D141-4156-B5EA-784DBB6F30C6} = {65059167-FF91-4500-8097-5C0560D63553}
 		{489E0791-31DD-4329-A022-FD9DDCA70624} = {6AA93F08-DC57-4827-8AE3-61FCC1344FCC}
+		{8B199F73-60F1-44A9-9C16-46DC341EFF63} = {6AA93F08-DC57-4827-8AE3-61FCC1344FCC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90297B69-F6C0-4CD5-9834-A9BAD3B3892B}

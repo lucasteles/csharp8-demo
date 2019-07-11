@@ -17,7 +17,9 @@ namespace UsingDeclaration
             using (var file = new StreamWriter("linhas.txt"))
             {
                 foreach (var line in lines)
+                {
                     file.WriteLine(line);
+                }
             }
         } 
 

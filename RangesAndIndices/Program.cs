@@ -1,5 +1,6 @@
 ﻿namespace RangesAndIndices
 {
+    using System;
     using System.Linq;
     using static System.Console;
 
@@ -7,7 +8,7 @@
     {
         static void Main()
         {
-            var array = Enumerable.Range(0, 20).ToArray();
+            Span<int> array = Enumerable.Range(0, 20).ToArray();
 
             var i = 1;
             var valorNoIndiceI = array[i];
@@ -20,8 +21,8 @@
 
             WriteLine($"Valor no índice: {valorNoIndiceI}");
             WriteLine($"Valor no fim: {ultimoItem}");
-            WriteLine($"slice do {inicio} ao {fim}: {string.Join(",", slice)}");
-            WriteLine($"slice reverso do {inicio} ao {fim}: {string.Join(",", sliceReverso)}");
+            WriteLine($"slice do {inicio} ao {fim}: {string.Join(",", slice.ToArray())}");
+            WriteLine($"slice reverso do {inicio} ao {fim}: {string.Join(",", sliceReverso.ToArray())}");
 
 
             ReadKey();

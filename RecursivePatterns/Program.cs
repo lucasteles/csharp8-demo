@@ -3,49 +3,12 @@ namespace RecursivePatterns
 {
     using Dominio;
     using System;
+    //using SomePessoa = Program.Some<Dominio.Pessoa>;
 
     class Program
     {
-        static void Main(string[] args)
-        {
+        static void Main() =>
             Console.WriteLine("Hello World!");
-
-        }
-
-        class Point2D
-        {
-            public int X { get; set; }
-            public int Y { get; set; }
-
-            public void Deconstruct(out int x, out int y)
-            {
-                x = X;
-                y = Y;
-            }
-        }
-
-        class Point3D : Point2D
-        {
-            public int Z { get; set; }
-            public void Deconstruct(out int x, out int y, out int z)
-            {
-                x = X;
-                y = Y;
-                z = Z;
-            }
-        }
-
-
-        string ShowPoint(Point2D point) =>
-            point switch
-            {
-                Point2D { X: var x, Y: 0 } => $"{x} para y=0",
-                Point2D (int x, 1) => $"{x} para y=1",
-                Point3D { X: var x, Y: var y, Z: 1 } => $"x={x}, y={y} para z = 1",
-                Point3D (int x, int y, int z) => $"x={x}, y={y}, z={z}",
-                _ => "",
-            };
-
 
         public abstract class Option<T> { }
         public class None<T> : Option<T> { }
@@ -67,10 +30,9 @@ namespace RecursivePatterns
                 return "Não é ninguém";
 
 
-            if (talvezPessoa is Some<Pessoa> somePessoa)
+            if (talvezPessoa is Some<Pessoa> somePessoa )
             {
                 var pessoa = somePessoa.Value;
-
                 if (pessoa.Idade == 18)
                     return pessoa.Nome;
             }
